@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Answer" />
-        <activity android:name=".ManageReference" />
+        <activity android:name=".ManageReference" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ManageQuestion" >
 
 
@@ -28,11 +34,7 @@
         </activity>
         <activity android:name=".AddNewQuestion">
 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>>
 
 

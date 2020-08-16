@@ -9,6 +9,6 @@ public class ManageReference extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_manage_reference);
+        setContentView(R.layout.activity_answer);
     }
 }
