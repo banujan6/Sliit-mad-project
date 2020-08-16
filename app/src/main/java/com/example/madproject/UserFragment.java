@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import static com.example.madproject.R.layout.catpopup;
+
 
 public class UserFragment extends Fragment {
 
@@ -50,7 +50,20 @@ public class UserFragment extends Fragment {
         (view.findViewById(R.id.plusbutton)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                newCategory();
+
+                Intent intent = new Intent(view.getContext(),UserAddCategory.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+        (view.findViewById(R.id.sciencex)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                delQuiz();
+
             }
         });
 
@@ -58,15 +71,16 @@ public class UserFragment extends Fragment {
 
     }
 
-    public void newCategory(){
+
+    public void delQuiz(){
 
         dialogBuilder = new AlertDialog.Builder(getActivity());
-        final View catpopup = getLayoutInflater().inflate(R.layout.catpopup,null);
-        dialogBuilder.setView(catpopup);
+        final View quizpopup = getLayoutInflater().inflate(R.layout.activity_discard_popup,null);
+        dialogBuilder.setView(quizpopup);
         dialog = dialogBuilder.create();
         dialog.show();
 
-        ImageButton xpop = catpopup.findViewById(R.id.xcatpopup);
+        ImageButton xpop = quizpopup.findViewById(R.id.button2);
 
         xpop.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,6 +90,9 @@ public class UserFragment extends Fragment {
         });
 
     }
+
+
+
 
 
 }

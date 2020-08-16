@@ -11,27 +11,61 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Answer" />
         <activity android:name=".ManageReference" />
-        <activity android:name=".ManageQuestion" />
+        <activity android:name=".ManageQuestion" >
+
+
+
+
+        </activity>
         <activity android:name=".AdminDashboard" />
         <activity android:name=".SetsActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".UserDashboard" />
         <activity android:name=".ManageSets" />
-        <activity
-            android:name=".SplashScreen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".UserAddCategory">
+
+
+        </activity>
+        <activity android:name=".AddNewQuestion">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>>
+
+
+        <activity android:name=".UserQuestion">
+
+
+
+        </activity>>
+        <activity android:name=".SucessPopup">
+
+
+        </activity>>
+
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+
+
+
+
         </activity>
+
         <activity
             android:name=".Login"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".Register"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <activity android:name=".discardPopup">
+
+        </activity>
     </application>
 
 </manifest>

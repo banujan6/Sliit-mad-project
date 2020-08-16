@@ -37,6 +37,7 @@
     <string name="editcatpop">Edit Category Name</string>
     <string name="editcatpophint">Automobile</string>
     <string name="up">Update</string>
+    <string name="addnewquiz">Add New Quiz</string>
 
     <string name="title_activity_register">Register</string>
     <string name="title_activity_login">Login</string>
